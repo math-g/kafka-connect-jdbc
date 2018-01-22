@@ -21,6 +21,19 @@ A minor change in Sink Postgresql Dialect was also made to be able to use BLOB t
 
 Original documentation for this connector can be found [here](http://docs.confluent.io/current/connect/connect-jdbc/docs/index.html).
 
+# Install
+Build from source (Apache Kafka and Confluent commun builds are necessary) or get the jar located at : 
+
+    target/kafka-connect-jdbc-4.1.0-SNAPSHOT-package/share/java/kafka-connect-jdbc/kafka-connect-jdbc-4.1.0-SNAPSHOT.jar
+    
+Sample instructions for a 4.0.0 Confluent Platform installed in /opt/kafka/confluent-4.0.0 (Ubuntu) :
+
+    $ sudo mv kafka-connect-jdbc-4.1.0-SNAPSHOT.jar /opt/kafka/confluent-4.0.0/share/java/kafka-connect-jdbc/
+    $ sudo chown [your_user]:[your_user] /opt/kafka/confluent-4.0.0/share/java/kafka-connect-jdbc/kafka-connect-jdbc-4.1.0-SNAPSHOT.jar
+    $ cd /opt/kafka/confluent-4.0.0/share/java/kafka-connect-jdbc/
+    $ mv kafka-connect-jdbc-4.0.0.jar kafka-connect-jdbc-4.0.0.jar.ori
+    $ mv kafka-connect-jdbc-4.1.0-SNAPSHOT.jar kafka-connect-jdbc-4.0.0.jar
+    
 # Use
 
 - **Inline views** :
@@ -73,13 +86,6 @@ Examples :
 `db.timezone=GMT+5`
 
 `db.timezone=jvm`
-
-# Contribute
-
-- Source Code: https://github.com/confluentinc/kafka-connect-jdbc
-- Issue Tracker: https://github.com/confluentinc/kafka-connect-jdbc/issues
-
-
 
 
 
