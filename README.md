@@ -26,10 +26,7 @@ Original documentation for this connector can be found [here](http://docs.conflu
 
 # Install
 The fork is based on Kafka-Connect-Jdbc 4.0.0.
-Build from source (Apache Kafka and Confluent commun builds are necessary) or get the jar located at : 
 
-    target/kafka-connect-jdbc-4.1.0-SNAPSHOT-package/share/java/kafka-connect-jdbc/kafka-connect-jdbc-4.1.0-SNAPSHOT.jar
-    
 Sample instructions for a 4.0.0 Confluent Platform installed in /opt/kafka/confluent-4.0.0 (Ubuntu) :
 
     $ sudo mv kafka-connect-jdbc-4.1.0-SNAPSHOT.jar /opt/kafka/confluent-4.0.0/share/java/kafka-connect-jdbc/
